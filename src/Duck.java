@@ -1,69 +1,81 @@
-public class Duck{
-        void quack(){
-            System.out.println("Qwek Qwek");
-        }
+interface QuacKable{
 
-        void swim(){
-            System.out.println("Berenang");
-        }
+    void quack();
+}
 
+interface flyable {
+    void fly();
+}
+
+abstract class duck {
+    abstract void display();
+
+    void swim(){
+    System.out.println("Berenang");
+    }
+}
+
+class Mallardduck extends  Duck implements  QuacKable, Flyable{
+    @Override
+    public void quack(){
+        System.out.println("Qwek Qwek");
+    }
+    @Override
+    public void fly(){
+        System.out.println("Terbang");
+    }
+    @Override
+    void  display(){
+        System.out.println("Tampilan MallardDuck");
+    }
+}
+
+class Redheadduck extends  Duck implements  QuacKable, Flyable {
+    @Override
+    public void quack() {
+        System.out.println("Qwek Qwek");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Terbang");
+    }
+
+    @Override
+    void display() {
+        System.out.println("Tampilan RedHeadDuck");
+    }
+}
+
+class Redheadduc extends Duck implements QuacKable{
+    @Override
+    public void quack(){
+        System.out.println("Squeak");
+    }
+    @Override
+    void display(){
+        System.out.println("Tampilan RubberDuck");
+    }
+}
+
+class WoodendDuck extends Duck{
+    void displya (){
+        System.out.println("Tampilan WoodenDuck");
+    }
+
+    @Override
     void display() {
 
     }
+}
 
-    void fly(){
-            System.out.println("Terbang");
-        }
+class Toyduck extends  Duck implements Flyable{
+    @Override
+    public void  fly(){
+        System.out.println("Terbang Seperti Mainan");
     }
-
-    class MallardDuck extends Duck{
-        @Override
-        void display() {
-            System.out.println("Tampilan MallardDuck");
-        }
+    @Override
+    void  display(){
+        System.out.println("Tampilan ToyDuck");
     }
-
-    class RedHeadDuck extends Duck{
-        @Override
-        void display() {
-            System.out.println("Tampilan RedHeadDuck");
-        }
-    }
-
-    class RubberDuckk extends Duck{
-        @Override
-        void display(){
-            System.out.println("Tampilan RubberDuck");
-        }
-        @Override
-        void quack() {
-            System.out.println("Bunyinya squeek, bukan qwak");
-        }
-
-        @Override
-        void fly() {
-            // Tidak ada implementasi, karena bebek mainan tidak dapat terbang
-        }
-    }
-
-    class WoodenDuck extends Duck{
-        @Override
-        void display() {
-            System.out.println("Tampilan WoodenDuck");
-        }
-        @Override
-        void quack(){
-            // Tidak ada implementasi, karena bebek mainan tidak dapat bersuara
-        }
-
-        @Override
-        void swim(){
-            System.out.println("Mengambang");
-        }
-
-        @Override
-        void fly(){
-            // Tidak ada implementasi, karena bebek mainan tidak dapat terbang
-        }
-    }
-
+}
