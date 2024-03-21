@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="412f6db4-ab34-49ba-afa3-3d3ac478f315" name="Changes" comment="git commit -m &quot;tahap pertama inheritace&quot;">
-      <change afterPath="$PROJECT_DIR$/src/tugas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="412f6db4-ab34-49ba-afa3-3d3ac478f315" name="Changes" comment="git commit -m &quot;tahap pertama inheritace&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
